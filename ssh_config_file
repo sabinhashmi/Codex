@@ -1,0 +1,25 @@
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/github_mac
+  IdentitiesOnly yes
+
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/github_workstation
+    IdentitiesOnly yes
+    PreferredAuthentications publickey
+
+Host Taurus
+  HostName taurus.fis.agh.edu.pl
+  User hashmi
+  IdentityFile ~/.ssh/d2_key
+  IdentitiesOnly yes
+
+Host D2
+  HostName lhcbd2.fis.agh.edu.pl
+  User hashmi
+  ProxyJump Taurus
+  IdentityFile ~/.ssh/d2_key
+  IdentitiesOnly yes

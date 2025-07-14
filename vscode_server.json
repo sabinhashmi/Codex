@@ -1,0 +1,11 @@
+{
+    "files.exclude": {
+        "**/.**": true
+    },
+    "jupyter.askForKernelRestart": false,
+    "remote.SSH.logLevel": "trace",
+    "remote.SSH.serverInstallPath": {
+          "HostName": "Path"
+        },   
+    "remote.SSH.defaultForwardedPorts": []
+}

@@ -1,0 +1,22 @@
+# Use the official Ubuntu image
+FROM ubuntu:latest
+
+# Prevent interactive prompts (useful for automation)
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Update package lists and install dependencies
+RUN apt-get update && apt-get install -y \
+    python3 \
+    python3-pip \
+    git \
+    vim \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set working directory inside the container
+WORKDIR /app
+
+# Copy test files from your Mac to the container
+COPY . /app
+
+# Default command when container starts (opens a shell)
+CMD ["/bin/bash"]
