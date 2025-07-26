@@ -20,8 +20,8 @@ npm -v           # Expect 10.9.2
 # Run once without install (temporary)
 npx https://github.com/google-gemini/gemini-cli
 
-# Install globally (requires sudo)
-sudo npm install -g @google/gemini-cli
+# Install globally (does not requires sudo)
+npm install -g @google/gemini-cli
 
 # Set Gemini API key (replace with actual key)
 export GEMINI_API_KEY="[GeminiAPI]"
