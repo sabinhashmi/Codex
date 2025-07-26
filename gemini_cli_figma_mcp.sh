@@ -26,6 +26,10 @@ npm install -g @google/gemini-cli
 # Set Gemini API key (replace with actual key)
 export GEMINI_API_KEY="[GeminiAPI]"
 
+# Make the API key persists
+echo 'export GEMINI_API_KEY="your-api-key"' >> ~/.bashrc
+source ~/.bashrc
+
 # -------------------------
 # Gemini CLI config example (JSON)
 # -------------------------
