@@ -42,3 +42,10 @@ flutter build web
 which brave-browser
 echo 'export CHROME_EXECUTABLE=/usr/bin/brave-browser' >> ~/.bashrc
 source ~/.bashrc
+
+
+# Best method on Fedora
+git clone https://github.com/flutter/flutter.git -b stable
+echo 'export PATH="$PATH:$HOME/flutter/bin"' >> ~/.bashrc
+source ~/.bashrc
+flutter doctor
