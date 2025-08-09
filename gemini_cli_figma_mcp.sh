@@ -35,6 +35,7 @@ source ~/.bashrc
 # -------------------------
 # Use as config for Gemini CLI MCP servers
 
+
 {
   "theme": "Default",
   "selectedAuthType": "gemini-api-key",
@@ -44,7 +45,7 @@ source ~/.bashrc
       "args": [
         "-y",
         "figma-developer-mcp",
-        "--figma-api-key=[APIKEY]",
+        "--figma-api-key=figd_-----4PxeV8",
         "--stdio"
       ]
     }
