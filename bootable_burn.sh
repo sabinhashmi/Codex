@@ -3,6 +3,8 @@ hdiutil convert -format UDRW -o <New.dmg> <Original.iso>
 
 #Find disk name
 diskutil list
+OR
+lsblk
 
 # Unmount the diskX
 diskutil unmountDisk /dev/diskX
