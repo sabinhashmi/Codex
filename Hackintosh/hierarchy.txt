@@ -1,0 +1,32 @@
+HighSierra
+├── com.apple.recovery.boot
+│   ├── BaseSystem.dmg
+│   └── BaseSystem.chunklist
+#
+# EFI Partition
+#
+├── EFI
+│   ├── BOOT
+│   │   └── BOOTx64.efi
+│   └── OC
+│       ├── ACPI
+│       │   ├── SSDT-PLUG-DRTNIA.aml
+│       │   └── SSDT-EC-USBX-DESKTOP.aml
+│       ├── Tools
+│       │   └── OpenShell.efi
+│       ├── Drivers
+│       │   ├── OpenRuntime.efi
+│       │   └── HfsPlus.efi
+│       ├── Kexts
+│       │   ├── Lilu.kext
+│       │   ├── AppleALC.kext
+│       │   ├── IntelMausi.kext
+│       │   ├── WhateverGreen.kext
+│       │   └── VirtualSMC.kext
+│       ├── Resources
+│       │   ├── Label
+│       │   ├── Image
+│       │   ├── Audio
+│       │   └── Font
+│       ├── OpenCore.efi
+│       └── config.plist
