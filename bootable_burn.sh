@@ -10,7 +10,7 @@ lsblk
 diskutil unmountDisk /dev/diskX
 
 # Write to rdiskX with raw access
-sudo dd if=New.dmg of=/dev/rdiskX bs=4m status=progress
+sudo dd if=New.dmg of=/dev/rdiskX bs=4m
 
 
 sudo dd if=~/Downloads/Fedora.iso of=/dev/rdisk2 bs=4m status=progress [For FEDORA]
