@@ -45,3 +45,18 @@ lb-run Bender/latest dst-dump -d 2016 -f -n 100 hlt2_test_persistreco_fromfile.d
 
 # Interactive Python with Moore and DST input
 lb-run Moore/v56r2 python -i ../../TrashBin/explore.py --input_file ../Data/hlt2_ks0_persistreco_fromfile.dst --input_process Hlt2 --simulation True
+
+# Pull Master Branch
+lb-dev --nightly lhcb-head/latest --platform x86_64_v3-el9-gcc13+detdesc-opt+g --name Moore_Master Moore/master
+
+
+git lb-use Rec
+git lb-checkout Rec/master Pr/PrAlgorithms
+git lb-checkout Rec/master Phys/SelTools
+git lb-checkout Rec/master Phys/SelAlgorithms
+git lb-use ParamFiles
+git lb-clone-pkg ParamFiles
+
+
+
+# End
