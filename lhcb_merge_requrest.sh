@@ -35,6 +35,10 @@ git commit -m "Message"
 # Push branch using lb-push
 git lb-push
 
+# You may have to use SSH Remote URL
+git remote set-url Rec git@gitlab.cern.ch:lhcb/Rec.git
+git remote -v
+
 # -------------------------
 # CI/CD and Copyright Checks
 # -------------------------
