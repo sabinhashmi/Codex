@@ -51,3 +51,8 @@ sudo certbot renew --dry-run
 
 ### Now you have a secure site with SSL certificate
 
+## If needed (Optional)
+sudo firewall-cmd --permanent --add-service=https
+sudo firewall-cmd --reload
+
+
