@@ -22,6 +22,8 @@ vim ~/.ssh/config
 
 # Format code relative to origin/master
 lb-format --reference origin/master
+OR
+pre-commit run --all-files
 
 # Create and checkout new branch using lb-checkout
 git lb-checkout -b [branch_name]
